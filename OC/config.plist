@@ -86,13 +86,13 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>Replace one byte sequence with another</string>
+				<string>Change MC__ to MCHC</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>ESIzRA==</data>
+				<data>TUNfXw==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -100,7 +100,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>RDMiEQ==</data>
+				<data>TUNIQw==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -108,29 +108,29 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
-				<string>\_SB.PCI0.LPCB.HPET</string>
+				<string></string>
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>HPET _CRS to XCRS</string>
+				<string>Change MC__ to MCHC</string>
 				<key>Count</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>X0NSUw==</data>
+				<data>TUNfXw==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>SWdmeFNzZHQ=</data>
 				<key>Replace</key>
-				<data>WENSUw==</data>
+				<data>TUNIQw==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -138,7 +138,37 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
+				<data>U1NEVA==</data>
+			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>Change ADBG to XDBG</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>QwMUGUFEQkc=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
 				<data></data>
+				<key>OemTableId</key>
+				<data>R1NXQXBw</data>
+				<key>Replace</key>
+				<data>QwMUGVhEQkc=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>U1NEVA==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -772,7 +802,7 @@
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
 			<key>ProvideCurrentCpuInfo</key>
-			<false/>
+			<true/>
 			<key>SetApfsTrimTimeout</key>
 			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
@@ -942,6 +972,10 @@
 			<dict>
 				<key>rtc-blacklist</key>
 				<data></data>
+				<key>revcpuname</key>
+				<string>Core Intel i7-12700</string>
+				<key>revcpu</key>
+				<integer>1</integer>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
@@ -952,7 +986,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 alcid=1 agdpmod=pikera</string>
+				<string>-v keepsyms=1 debug=0x100 agdpmod=pikera -wegnoigpu alcid=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
